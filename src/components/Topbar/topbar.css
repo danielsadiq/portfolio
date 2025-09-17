@@ -1,0 +1,84 @@
+.topbar .wrapper .right {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.topbar .wrapper .right .darkMode {
+    margin-right: 60px;
+    transition: all .2s ease-in
+}
+
+.topbar .wrapper .right .darkMode:hover {
+    cursor: pointer;
+    -webkit-filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%);
+    filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%);
+    transition: all .2s ease-in
+}
+
+.topbar .wrapper .right .hamburger {
+    width: 25px;
+    height: 21px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.topbar .wrapper .right .hamburger span {
+    width: 100%;
+    height: 3px;
+    border-radius: 7px;
+    background-color: #15023a;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: all 2s ease
+}
+
+.topbar .wrapper .right .hamburger:hover span {
+    -webkit-filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%);
+    filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%);
+    transition: all .2s ease
+}
+
+.topbar.active {
+    background-color: #15023a;
+    color: #fff
+}
+
+.topbar.active .itemContainer svg,.topbar.active svg {
+    fill: #fff
+}
+
+.topbar.active .hamburger span:first-child {
+    background-color: #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.topbar.active .hamburger span:nth-child(2) {
+    opacity: 0
+}
+
+.topbar.active .hamburger span:nth-child(3) {
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.topbar.dark {
+    background-color: #15023a;
+    color: #fff
+}
+
+.topbar.dark .itemContainer svg,.topbar.dark svg {
+    fill: #fff
+}
+
+.intro,.topbar.dark .hamburger span.line {
+    background-color: #fff
+}
