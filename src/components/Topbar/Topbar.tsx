@@ -5,24 +5,27 @@ import Icon from "./Icon";
 import Menu from "./Menu";
 import { LuMoon, LuSun } from "react-icons/lu";
 import "./topbar.css"
-function Topbar() {
+function Topbar({lightTheme, setLightTheme}: {lightTheme:boolean, setLightTheme: React.Dispatch<React.SetStateAction<boolean>>}) {
   const [active, setActive] = useState(false);
   return (
-    <div className={`topbar${active ? " active": ""}`}>
+    <div className={`topbar${active ? " active": ""} dark:bg-purple-900`}>
       <div className="wrapper flex justify-between w-full">
         <div className="left flex items-center">
           <a href='#intro' className='logo'>Sadiq.</a>
           <Menu active={active} />
         </div>
         <div className="right flex">
-            <nav className="flex items-center gap-x-1">
+            <nav className="flex items-center gap-x-1 dark:bg-purple-900">
               <Icon><FaGithub/></Icon>
               <Icon><FaLinkedinIn /></Icon>
               <Icon><FaXTwitter /></Icon>
               <Icon><FaInstagram/></Icon>
-              <div className={`p-2 space-x-4 flex`}>
-                <LuSun/> <LuMoon/>
-              </div>
+              <button onClick={()=> setLightTheme(!lightTheme)}>
+              <Icon custom={true}>
+                {lightTheme ? <LuMoon/> : <LuSun/>}
+              </Icon>
+              </button>
+                
               <div className="hamburger flex md:hidden" onClick={()=> setActive(!active)}>
                 <span className="line"></span>
                 <span className="line"></span>

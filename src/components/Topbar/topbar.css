@@ -45,7 +45,7 @@
     height: 3px;
     z-index: 3;
     border-radius: 7px;
-    background-color: #15023a;
+    /* background-color: #15023a; */
     -webkit-transform-origin: right;
     transform-origin: right;
     transition: all 1s ease
