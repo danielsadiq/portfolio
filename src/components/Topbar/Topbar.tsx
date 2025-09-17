@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaLinkedinIn, FaGithub, FaInstagram  } from "react-icons/fa";
+import { MdOutlineLightMode } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import Icon from "./Icon";
 import Menu from "./Menu";
@@ -13,12 +14,14 @@ function Topbar() {
           <Menu active={active} />
         </div>
         <div className="right flex">
-            <nav className="flex items-center gap-x-4">
-              {/* <a target="_blank" rel="noreferrer" className="transition-colors"><FaGithub /></a> */}
+            <nav className="flex items-center gap-x-1">
               <Icon><FaGithub/></Icon>
               <Icon><FaLinkedinIn /></Icon>
               <Icon><FaXTwitter /></Icon>
               <Icon><FaInstagram/></Icon>
+              <div className={`p-2`}>
+              <MdOutlineLightMode />
+              </div>
               <div className="hamburger flex md:hidden" onClick={()=> setActive(!active)}>
                 <span className="line"></span>
                 <span className="line"></span>

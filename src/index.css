@@ -15,10 +15,10 @@
     background-color: #fff;
 }
 
-.topbar .wrapper .right .darkMode {
+/* .topbar .wrapper .right .darkMode {
     margin-right: 60px;
     transition: all 1s ease-in
-}
+} */
 
 .topbar .wrapper .right .darkMode:hover {
     cursor: pointer;
@@ -28,8 +28,10 @@
 }
 
 .topbar .wrapper .right .hamburger {
-    width: 25px;
-    height: 21px;
+    /* width: 25px; */
+    width: 19.4px;
+    /* height: 21px; */
+    height: 16.8px;
     /* display: -webkit-flex; */
     /* display: flex; */
     -webkit-flex-direction: column;
@@ -82,7 +84,7 @@
     top: 0;
     right: -300px;
     z-index: 2;
-    transition: all 1.5s ease
+    transition: all .5s ease-in-out
   }
   .menu.active {
       right: 0
