@@ -1,13 +1,13 @@
 function BgAnimation() {
   return (
     <div className="bg-animation">
-      <div>
+      <div className="z-[-1]">
         <svg
           className="BgAnimation__svg"
           viewBox="0 0 602 602"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          style={{ width: "1200px", position: "fixed" }}
+          style={{ width: "600px", position: "fixed" }}
         >
           <g opacity="0.15">
             <path

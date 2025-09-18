@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=La+Belle+Aurore&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=La+Belle+Aurore&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant hover (&:hover);
 
 body{
     min-height: 100vh;
+    /* background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent); */
+    background-color: #fffdfc;
     /* background: linear-gradient(rgb(21, 2, 58) 0px, rgb(13, 13, 49)); */
 }
 .logo {
@@ -28,7 +31,7 @@ body{
 } */
 
 .topbar .wrapper .right .darkMode:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     /* -webkit-filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%); */
     /* filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%); */
     transition: all 1s ease-in
@@ -97,4 +100,23 @@ body{
       right: 0
   }
 }
+
+/* .main{
+    background-image: radial-gradient(at 40% 40%, #1e90ff 0, transparent 50%),
+      radial-gradient(at 90% 10%, #ff69b4 0, transparent 50%),
+      radial-gradient(at 50% 95%, #00ffff 0, transparent 50%),
+      radial-gradient(at 20% 30%, #32cd32 0, transparent 50%),
+      radial-gradient(at 90% 90%, #ffff00 0, transparent 50%),
+      radial-gradient(at 33% 50%, #ff4500 0, transparent 50%),
+      radial-gradient(at 79% 53%, #800080 0, transparent 50%);
+    position: fixed;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: blur(100px) saturate(100%);
+    top: 0px;
+    opacity: 0.1;
+    transform: translateZ(0);
+} */
 

@@ -20,7 +20,7 @@
 } */
 
 .topbar .wrapper .right .darkMode:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     /* -webkit-filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%); */
     /* filter: invert(38%) sepia(79%) saturate(658%) hue-rotate(301deg) brightness(88%) contrast(95%); */
     transition: all 1s ease-in
